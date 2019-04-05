@@ -1,0 +1,12 @@
+<h2> Edit a Brand </h2>
+<form action="/<%=@brand.id%>" method="post">
+  <input type="hidden" name="_method" value="put">
+  <label for="name">Name</label>
+    <input type="text" id = "name" name="name" value= "<%= @brand.name %>">
+<input type="submit" value="Edit Brand">
+</form>
+
+<form method="post" action="/<%= @brand.id %>">
+  <input type="submit" value="Delete This Brand">
+  <input type="hidden" name="_method" value="DELETE" />
+</form>

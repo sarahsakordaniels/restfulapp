@@ -1,0 +1,11 @@
+<h1>Mattress Brands!</h1>
+
+<ul>
+
+  <% @brands.each do |brand|%>
+    <li>  <%=brand.name%><a href="/<%= brand.id %>/edit">-Edit-</a> </li>
+  <%end%>
+
+</ul>
+
+<a href="/new">Click To Create A New Mattress Brand!</a>
